@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0 0;
+    cursor: pointer;
+  }
+
+  span, p, a {
+    padding: 1px 15px 10px 15px;
+  }
+
+  a {
+    display: block;
+    color: var(--gray-800);
+    font-family: Lexend, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1.4rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  :nth-child(2) {
+    color: var(--gray-800);
+    font-family: Lexend, sans-serif;
+    font-weight: 600;
+    line-height: 1.4rem;
+    font-size: 1rem;
+  }
+
+  button {
+    position: relative;
+    bottom: 1.3rem;
+    margin: 15px 15px 0 auto;
+    width: 3rem;
+    height: 3rem;
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: 0.5rem;
+    font-size: 0;
+    transition: 0.2s;
+
+    &:hover {
+      filter: brightness(0.95);
+    }
+  }
+}
